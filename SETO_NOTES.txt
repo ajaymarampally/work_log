@@ -1,0 +1,130 @@
+
+SETO_NOTES
+
+GIT CLONE 
+git clone https://ajay_marampalli@bitbucket.org/stantecgs-vharris/seto.git
+
+DB_CONNECTION STRING
+
+NPM INSTALL
+
+npm install --legacy-peer-deps
+
+VM details: 
+
+VM address: 10.73.4.32
+AD\amaram2
+
+Database connection:
+
+Server name: CC-SQL2k16-ERC\ERC
+Window 
+
+npm install --legacy-peer-deps
+
+
+Data Source=HP-AJ\\SQLEXPRESS;Initial Catalog=SETO-DB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;
+
+
+DB_CONNECTION STRING - SQL SERVER 
+
+data source=CC-SQL2K16-WST1\ERC;initial catalog=PHASEToolDB;trusted_connection=true
+
+
+fields for comparision
+
+1.Native status -> dropdown with all available options
+2.bloom period -> lower boundary_ upper boundary ( jan - april) 
+3.states -> dropdown ( convert to state code ) 
+4.soilPh -> min - max 
+5.benefits to pollinator -> all dropdown options 
+6.MatureHeight -> ( value ) -> select all values below the selected 
+Data Source=HP-AJ\SQLEXPRESS;Initial Catalog=SETO-DB;Integrated Security=True
+
+
+
+site_location -> states_convert_to state code and check like in string
+planting_zones -> null 
+native_preference -> dropdown with all distinct values, based on selection use like to find in string 
+panel_height -> (mature_height) -> select max value from mature_height and select all below that 
+soil_type -> append all strings_ , search if that string exisists using like
+soil_moisture -> wet , moist , dry , well-drained
+light_exposure -> Sun , part , shade , part shade
+soil_tolerance -> select from seed_data_old
+soil_ph_min -> input in integer
+soil_ph_max -> input in integer
+pollinator_benefits -> [Larval Food,Nesting and Structure (Bees),Adult Food]
+seeding_season -> NULL
+bloom_period_earliest -> dropdown 
+bloom_period_latest -> dropdown
+seed_availability -> NULL
+relative_cost -> NULL
+quick_germination -> NULL
+grazing_palatability -> (palatable_browse_animal) (Low,High,Medium)
+grazing_tolerance -> [palatable_graze_animal] (Low,High,Medium)
+mowing_tolerance -> NULL
+
+
+
+// 5 - 10
+
+soil_ph_min >= min_req
+soil_ph_max <= max_req && soil_ph_max > min_req
+
+
+sun,part,shade, part_shade => make checkboxes from store
+
+
+cost_instructions -> page 1 
+
+hide col 2 and col 3 if they do not exist in the page 1 
+export to excel -> btn and code 
+code to calculate all values according to spreadsheet 
+
+save the state -> setup redux for the values
+replace inputs with check boxes and controllers 
+
+add reset btn to restore to orginal values on page 2
+
+add validation for thew fields 
+
+
+page 1 -> cost_instructions 
+page 2 -> cost_refinements
+page 3 -> cost_analysis_results
+
+
+page 2-> cost refinements convert to value inouts and store the values in the store 
+
+
+        option_name: '',
+        date: '',
+        project_name: '',
+        project_location: '',
+        user_name: '',
+        minimum_panel_height: '',
+        phase_of_construction: '',
+        array_width: '',
+        row_restrictions: '',
+        array_size: '',
+        vegetation_type: '',
+        seed_mix_cost_array: '',
+        fertilizer_required_array: '',
+        soil_amendment_required_array: '',
+        buffer_size: '',
+        desired_vegetation: '',
+        seed_mix_cost_buffer: '',
+        fertilizer_required_buffer: '',
+        soil_amendment_required_buffer: '',
+        seedbed_preparation_cost: '',
+        pre_seeding_cost: '',
+        linear_feet_of_landscape: '',
+        annual_vegetation_monitoring: '',
+        require_pollinator_score_card: '',
+        vegetation_state: '',
+        expect_maintainance_intensity: '',
+        project_required_grazing: '',
+        duration_of_maintainance: '',
+		
+		
+		

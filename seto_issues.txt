@@ -1,0 +1,13 @@
+--change planting zone to text field 
+
+facing issues with multi field, not all fields are included, change to text field and this will not be part of query
+
+--include tooltip for pollinator benefits 
+
+users facing issue with info, include tooltip , change to multi select 
+
+--change blooming period to multi-select 
+
+--change seed_availability to multi-select
+
+--include a option for downloading pdf of final results 
