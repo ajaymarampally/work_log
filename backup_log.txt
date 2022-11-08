@@ -1,0 +1,47 @@
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={initial_inputs_checkboxes.array_zone}
+                                onChange={e=>handleValueChange(e)}
+                                name="planting_zones"
+                                color="primary"
+                                value="array_zone"
+                            />
+                        }
+                                label="Array Zone&nbsp;&nbsp;&nbsp;&nbsp;"
+                    />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={initial_inputs_checkboxes.perimeter_zone}
+                                onChange={e=>handleValueChange(e)}
+                                name="planting_zones"
+                                color="primary"
+                                value="perimeter_zone"
+                            />
+                        }
+                                label="Perimeter Zone&nbsp;&nbsp;&nbsp;&nbsp;"
+                    />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={initial_inputs_checkboxes.buffer_lands}
+                                onChange={e=>handleValueChange(e)}
+                                name="planting_zones"
+                                color="primary"
+                                value="buffer_lands"
+                            />
+                        }
+                                label="Buffer Lands&nbsp;&nbsp;&nbsp;&nbsp;"
+                    />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                checked={initial_inputs_checkboxes.other}
+                                onChange={e=>handleValueChange(e)}
+                                name="planting_zones"
+                                color="primary"
+                                value="Other"
+                            />
+                        }
+                                label="Other&nbsp;&nbsp;&nbsp;&nbsp;"
